@@ -4,8 +4,8 @@
 
 // Déclaration du tableau des recettes
 $recipes = [
-    ['Cassoulet','[...]','mickael.andrieu@exemple.com',true,],
-    ['Couscous','[...]','mickael.andrieu@exemple.com',false,],
+    ['Cassoulet', '[...]', 'mickael.andrieu@exemple.com', true],
+    ['Couscous', '[...]', 'mickael.andrieu@exemple.com', false],
 ];
 
 ?>
@@ -19,7 +19,7 @@ $recipes = [
     <ul>
         <?php for ($lines = 0; $lines <= 1; $lines++): ?>
             <li><?php echo $recipes[$lines][0] . ' (' . $recipes[$lines][1] . ')'; ?></li>
-        <?php endfor; ?>
+        <?php endfor;?>
     </ul>
 
     <br>
@@ -42,13 +42,13 @@ echo $users[1][1]; // "mathieu.nebra@exemple.com"
  * Chaque élément du tableau est un tableau numéroté (une recette)
  */
 $recipes = [
-    ['samia1','samia','mickael.samia1@exemple.com',true,],
-    ['lina1///','lina','lina.andrieu@exemple.com',false,],
+    ['samia1', 'samia', 'mickael.samia1@exemple.com', true],
+    ['lina1///', 'lina', 'lina.andrieu@exemple.com', false],
 ];
 
 for ($lines = 0; $lines <= 1; $lines++) {
     // echo $recipes[$lines][0];
-    echo  $recipes[1][0];
+    echo $recipes[1][0];
 }
 ?>
 
@@ -84,13 +84,11 @@ $recipe = [
     'author' => 'laurene.castor@exemple.com',
 ];
 
-if (array_key_exists('title', $recipe))
-{
+if (array_key_exists('title', $recipe)) {
     echo 'La clé "title" se trouve dans la recette !';
 }
 
-if (array_key_exists('commentaires', $recipe))
-{
+if (array_key_exists('commentaires', $recipe)) {
     echo 'La cle "commentaires" se trouve dans la recette !';
 }
 
